@@ -8,7 +8,7 @@ setup(
 
     author='S. Brewster Malevich',
     author_email='malevich@email.arizona.edu',
-    url='https://github.com/brews/reticfox',
+    url='https://github.com/brews/nomnom',
 
     packages=find_packages(),
     install_requires=['numpy', 'xarray', 'click', 'cartopy', 'matplotlib', 'tqdm'],
