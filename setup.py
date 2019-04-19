@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='nomnom',
-    version='0.0.1a',
+    version='0.0.1a0',
     license='GPLv3',
     description='Quick and dirty tools to parse Last Millennium Reanalysis (LMR) data assimilation output ',
 
