@@ -19,7 +19,7 @@ def nomnom_cli():
 @nomnom_cli.command(help='Write PDF report from DA output directory')
 @click.option('--dapath', help='Path to directory with DA output files')
 @click.option('--outpdf', help='Where to write output PDF file')
-def report(dapath, pdfpath):
+def report(dapath, outpdf):
     """Produce PDF report from data assimilation output directory
     """
     target_fields = nomnom.api.utils.list_ensemblefields(dapath)
@@ -36,4 +36,4 @@ def report(dapath, pdfpath):
     except FileNotFoundError:
         assim_proxies = None
 
-    daplot.write_reportpdf(pdfpath, *out_fields, assim_proxies=assim_proxies)
+    daplot.write_reportpdf(outpdf, *out_fields, assim_proxies=assim_proxies)
