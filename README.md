@@ -9,7 +9,7 @@ This project is under activate development.
 From a terminal, run:
 
 ```bash
-nomnom report --dapath /path_to/lmr_output/r0 --pdfpath da_report.pdf
+nomnom report --dapath /path_to/lmr_output/r0 --outpdf da_report.pdf
 ```
 
 This reads LMR DA directory output and then writes a quick and dirty PDF, handy for quality control.

@@ -31,8 +31,6 @@ def closest_xy(lat, lon, df):
 def read_ensemblenpz(path):
     """Convert input DA ensemble NPZ file to xarray.Dataset"""
     d = np.load(path)
-    potential_vars = ['nens', 'years', 'nlat', 'nlon', 'lat', 'lon', 'xbm', 'xam', 'xbv', 'xav']
-    assert all(variable in potential_vars for variable in d.keys())
     # TODO(brews): Need to add metadata and reference_time. Maybe units.
     # TODO(brews): Do we need to worry about overflowing the float for time?
     # TODO(brews): Include other attrs that are in npz file.
